@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+
+.about{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #120F0F ;
+}
+
+.img-bosses{
+    width: 800px;
+    margin-left: 100px;
+    border: 2px solid white;
+}
+
+.text-about{
+    width: 800px;
+    color: white;
+    font-size: 30px;
+    margin-right: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
