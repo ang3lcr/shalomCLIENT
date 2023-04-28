@@ -11,7 +11,9 @@ function MyNavBar() {
       <div className='navbarcontainer'>
         <div className="aux">
             <div className="logo-container">
+              <Link to='/'>
                 <img src={logoImg} alt="" />
+              </Link>
             </div>
         </div>
         <ul className='nav-bar-elements'>
@@ -22,10 +24,7 @@ function MyNavBar() {
             <Link to="products" spy={true} smooth={true} offset={50} duration={500}>Productos</Link>
             </li>
             <li>
-            <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contacto</Link>
-            </li>
-            <li>
-            <Link to="revies" spy={true} smooth={true} offset={50} duration={500}>Reviews</Link>
+            <Link to="login" spy={true} smooth={true} offset={50} duration={500}>Login</Link>
             </li>
         </ul>
     </div>
