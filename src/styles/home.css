@@ -6,12 +6,23 @@
 #home{
     background-color: #120F0F;
     background: #120F0F;
-    width: 100vw;
-    height: 100vh;
-
 }
 
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
 
+.video-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 /*font-family: 'Open Sans', sans-serif;*/
@@ -52,15 +63,7 @@ header{
     font-size: 30px;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-}
-.logo{
-    width: 130px;
-    height: 130px;
-    margin-left: 5%;
-}
+
 
 li{
     list-style: none;
@@ -83,17 +86,13 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1vh;
-    width: 1vw;
+    border: 1px solid green;
 }
 
-.image-container{
-    width: 700px;
-    margin-top: 10%;
-    margin-top: 50px;
-}
 
 .second-container{
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-around;
     gap: 100px;

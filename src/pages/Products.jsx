@@ -4,6 +4,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProductsThunk } from '../store/slices/products.slice'
 import axios from 'axios';
 import '../styles/products.css'
+import {motion} from 'framer-motion'
+
+
+
+
+
 const Produts = () => {
     const dispatch = useDispatch();
     const [categories, setCategories] = useState([]);
