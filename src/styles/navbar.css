@@ -9,6 +9,7 @@
     top: 0;
     z-index: 9999; /* Asegura que la barra de navegación esté por encima de todo */
     width: 100%; /* Asegura que ocupe todo el ancho */
+    
 }
 
 img {
