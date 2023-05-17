@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCartThunk } from '../store/slices/cart.slice';
+import { getCartThunk, removeProductThunk } from '../store/slices/cart.slice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark, faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import '../styles/cart.css'
@@ -41,6 +41,18 @@ const purchase = () => {
     });
 }
 
+
+
+const removeProduct = (product) => {
+  const data = {
+    "userId": Number(localStorage.getItem('userId')),
+    "productId": product
+  }
+  dispatch(removeProductThunk(data))
+  alert("Producto eliminado :)")
+
+}
+
   let total = 0
   cart.map(product => (
     total += product.sub_total
@@ -57,6 +69,9 @@ const purchase = () => {
                 <p className='product-cart-quantity'>
                   x{product.quantity}
                 </p>
+                <button onClick={() => removeProduct(product.product.id)}>
+                  Eliminar
+                </button>
                <img src={product.product.product_image} alt="" className="resize-img" />
            <div className="product-cart-data">
              <p className='product-cart-name'>

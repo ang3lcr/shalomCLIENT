@@ -5,7 +5,10 @@ import { getProductsThunk } from '../store/slices/products.slice'
 import axios from 'axios';
 import '../styles/products.css'
 import {motion} from 'framer-motion'
-
+import Footer from '../components/Footer';
+import logo from '../assets/images/whitelogo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/fontawesome-free-brands'
 
 
 

@@ -30,5 +30,11 @@ export const addToCartThunk = (data) => dispatch => {
     return axios.post("https://shalomapi-production.up.railway.app/api/v1/cart/addToCart", data, getConfig())
         .then(res => dispatch(getCartThunk()))
 }
+
+export const removeProductThunk = (data) => dispatch => {
+    return axios.post("https://shalomapi-production.up.railway.app/api/v1/cart/remove", data)
+        .then(res => dispatch(getCartThunk()))
+}
+
 export const { setCart } = cartSlice.actions;
 export default cartSlice.reducer;

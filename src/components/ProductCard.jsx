@@ -22,6 +22,7 @@ const ProductCard = (props) => {
         }
         console.log(data);
         dispatch(addToCartThunk(data))
+        alert("Producto agregado :)")
      }
 
     let MXN = new Intl.NumberFormat('es-MX', {
