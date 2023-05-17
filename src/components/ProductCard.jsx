@@ -31,9 +31,9 @@ const ProductCard = (props) => {
 
     return (
         <div className='product-card123' id='product-card'>
-            <div className="card" onClick={() => navigate(`/product/${props.id}`)}>
+            <div className="card">
                 <div className="product-image">
-                    <img src={props.productImage} alt="" />
+                    <img src={props.productImage} alt="" onClick={() => navigate(`/product/${props.id}`)}/>
                 </div>
                 <div className="content" id='product-content'>
                     <div className="product-name">
