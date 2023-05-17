@@ -18,6 +18,12 @@ const CartSideBar = ({ show, handleClose }) => {
     currency: 'MXN'
 })
 
+  let total = 0
+  cart.map(product => (
+    total += product.sub_total
+  ))
+  console.log(total);
+
   return (
     <div className={`CartSideBar ${show ? 'show' : ''}`}>
       <div className="close-button" onClick={handleClose}>
@@ -41,6 +47,12 @@ const CartSideBar = ({ show, handleClose }) => {
           </li>
         ))}
       </ul>
+      <div className='total-cart'>
+        <p>Total:</p>
+        <p>
+          {MXN.format(total)}
+        </p>
+      </div>
     </div>
   );
 };

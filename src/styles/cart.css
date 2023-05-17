@@ -40,13 +40,26 @@
   padding-top: 10%;
 }
 
-.product-image-cart-container{
 
-
-}
 .product-cart-data{
-
+  width: 50%;
+  text-align: center;
+  padding-right: 6%;
 }
 .product-cart-subtotal{
   text-align: center;
+}
+
+.total-cart {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20%;
+  border-top: 1px solid gray;
+  width: 100%;
+  padding: 2%;
 }
