@@ -6,11 +6,12 @@ import axios from 'axios'
 import { addToCartThunk } from '../store/slices/cart.slice'
 import getUserId from '../../src/utils/getUserId'
 import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 const ProductCard = (props) => {
 
     const dispatch = useDispatch();
-
+    const navigate = useNavigate();
     
 
     const addToCart = (product) => {
@@ -30,7 +31,7 @@ const ProductCard = (props) => {
 
     return (
         <div className='product-card123' id='product-card'>
-            <div className="card">
+            <div className="card" onClick={() => navigate(`/product/${props.id}`)}>
                 <div className="product-image">
                     <img src={props.productImage} alt="" />
                 </div>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+
+
+.ProductInDetail{
+    background-color: white;
+    display: flex;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.product-in-detail-container{
+    width: 80%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.related-products-title{
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.product-in-detail-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.product-in-detail-image{
+    width: 600px;
+}
+
+.product-in-detail-description{
+    font-size: 30px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.add-product-in-detail-to-cart{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    margin-top: 10%;
+    width: fit-content;
+    align-self: center;
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: cyan;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+  
+  .my-button:hover {
+    background-color: rgba(21, 255, 0, 0.678);
+  }
+  
+  .product-related-resize{
+    max-width: 100px;
+  }
+  .related-products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .related-product:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 225, 255, 0.3);
+    cursor: pointer;
+  }
+
+  .related-products{
+    text-align: center;
+  }

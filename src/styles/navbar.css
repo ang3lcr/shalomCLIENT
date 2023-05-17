@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+
+
+
 .navBar {
     position: fixed;
     top: 0;
@@ -11,6 +21,7 @@
     width: 100%; /* Asegura que ocupe todo el ancho */
     background-color: rgba(127, 240, 255, 0.466);
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {

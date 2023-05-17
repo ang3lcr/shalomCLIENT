@@ -3,6 +3,8 @@ import '../styles/login.css'
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -26,6 +28,11 @@ const Login = () => {
         <div className="login-main-container">
             <div className="login-box">
             <h1>Login</h1>
+            <div className="test-data">
+                <h3>Datos de Prueba</h3>
+                Email: angel@gmail.com<br />
+                Password: 1234
+            </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label>Email</label>
@@ -35,7 +42,7 @@ const Login = () => {
                     <label>Password</label>
                     <input type="password" {...register('password')} />
                 </div>
-                <button type='sumbit'>Enviar</button>
+                <button type='sumbit' className='login-button'><FontAwesomeIcon icon={faCircleCheck}/></button>
             </form>
             </div>
         </div>

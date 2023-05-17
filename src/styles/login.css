@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+
+
+
+
+
+
+
+
+
 .login-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1d1c1c;
+    background-color: #000000;
   }
 
 .login{
@@ -20,15 +35,18 @@
     align-items: center;
     padding: 50px;
     background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgb(0, 247, 255);
     border-radius: 5px;
-  }
+    font-family: 'Heebo', sans-serif;
+ }
   
-  h1 {
+  h1{
     font-size: 24px;
     font-weight: bold;
     color: #000;
     margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
   }
   
   form {
@@ -54,17 +72,16 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-button[type="submit"] {
-  background-color: #0ff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+
+.test-data{
+  padding: 1%;
 }
 
-button[type="submit"]:hover {
-  background-color: #000;
-  color: #fff;
+.login-button{
+  border: none;
+  font-size: 30px;
+}
+
+.login-button:hover{
+  color: cyan;
 }

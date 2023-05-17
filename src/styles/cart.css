@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+/*font-family: 'Heebo', sans-serif;*/
+
+
 .CartSideBar {
   width: 300px;
   height: 100%;
@@ -6,6 +12,7 @@
   top: 0;
   right: -300px; 
   transition: right 0.3s ease; 
+  font-family: 'Heebo', sans-serif;
 }
 
 .CartSideBar.show {
@@ -51,7 +58,7 @@
 }
 
 .total-cart {
-  position: absolute;
+  margin-top: 15%;
   bottom: 0;
   font-size: 20px;
   color: black;
@@ -62,4 +69,22 @@
   border-top: 1px solid gray;
   width: 100%;
   padding: 2%;
+}
+
+.purchase-button{
+  position: absolute;
+  font-size: 40px;
+  bottom: 5%;
+  border: none;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase-button:hover{
+  transform: rotate(-15deg);
+  color: green;
 }
