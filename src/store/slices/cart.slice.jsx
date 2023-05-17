@@ -27,7 +27,7 @@ export const getCartThunk = () => dispatch => {
 }
 
 export const addToCartThunk = (data) => dispatch => {
-    return axios.post("https://shalomapi-production.up.railway.app/api/v1/cart", data)
+    return axios.post("https://shalomapi-production.up.railway.app/api/v1/cart/addToCart", data, getConfig())
         .then(res => dispatch(getCartThunk()))
 }
 export const { setCart } = cartSlice.actions;

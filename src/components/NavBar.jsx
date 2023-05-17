@@ -3,9 +3,11 @@ import { useState } from 'react'
 import '../styles/navbar.css'
 import logoImg from '../assets/images/whitelogo.png'
 import {Link } from 'react-router-dom'
-import {faUser, faCartShopping} from '@fortawesome/free-solid-svg-icons'
+import {faUser, faCartShopping, faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import CartSideBar from './CartSideBar'
+import axios from 'axios'
+import getConfig from '../utils/getConfig'
 
 function MyNavBar() {
 
@@ -14,6 +16,11 @@ function MyNavBar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const logout = () => {
+    localStorage.removeItem('userId');
+    localStorage.removeItem('token');
+
+  }
 
 
   return (
@@ -31,13 +38,16 @@ function MyNavBar() {
               <Link to="about">Sobre nosotros</Link>
             </li>
             <li>
-            <Link to="products">Ver Productos</Link>
+            <Link to="products">Productos</Link>
             </li>
             <li>
             <Link to="login"><FontAwesomeIcon icon={faUser}/></Link>
             </li>
             <li>
             <Link onClick={handleShow}><FontAwesomeIcon icon={faCartShopping}/></Link>
+            </li>
+            <li>
+            <Link onClick={logout}><FontAwesomeIcon icon={faRightFromBracket}/></Link>
             </li>
         </ul>
     </div>

@@ -5,17 +5,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import { addToCartThunk } from '../store/slices/cart.slice'
 import getUserId from '../../src/utils/getUserId'
+import { useDispatch } from 'react-redux'
 
 const ProductCard = (props) => {
 
-    //uerId, productId, quantity
+    const dispatch = useDispatch();
 
     
 
-    const addProductToCart = (product) => {
-           
-    }
-
+    const addToCart = (product) => {
+        const data = {
+            userId: Number(localStorage.getItem('userId')),
+            productId: product, 
+            quantity: 1,
+        }
+        console.log(data);
+        dispatch(addToCartThunk(data))
+     }
 
     let MXN = new Intl.NumberFormat('es-MX', {
         style: 'currency',
@@ -36,7 +42,7 @@ const ProductCard = (props) => {
                         {MXN.format(props.price)}
                     </div>
                 </div>
-                <button id='add-to-cart-button' onClick={() => addProductToCart(props.id)}>
+                <button id='add-to-cart-button' onClick={() => addToCart(props.id)}>
                     <FontAwesomeIcon icon={faCartPlus}/>
                 </button>
             </div>
