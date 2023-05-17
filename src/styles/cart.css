@@ -1,0 +1,52 @@
+.CartSideBar {
+  width: 300px;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  transition: right 0.3s ease; 
+}
+
+.CartSideBar.show {
+  right: 0; 
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  cursor: pointer;
+}
+  
+.resize-img{
+  width: 25%;
+}
+.exit-button{
+  color: black;
+  font-size: 20px;
+}
+
+.products-in-cart{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-in-cart{
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.product-image-cart-container{
+
+
+}
+.product-cart-data{
+
+}
+.product-cart-subtotal{
+  text-align: center;
+}

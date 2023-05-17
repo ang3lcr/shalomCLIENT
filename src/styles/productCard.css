@@ -45,6 +45,7 @@ img{
     box-shadow: 0 10px 20px rgba(0, 125, 184, 0.3);
     transform: scale(1.1);
     transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -55,7 +56,12 @@ img{
 
 #add-to-cart-button{
     margin-top: 5%;
-    color: rgb(24, 201, 1);
+    color: cyan;
     border: 0;
     font-size: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+#add-to-cart-button:hover{
+    color: rgb(24, 201, 1);
 }

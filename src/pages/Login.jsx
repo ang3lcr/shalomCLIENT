@@ -11,7 +11,10 @@ const Login = () => {
     const onSubmit = (data) => {
         console.log(data);
         axios.post("https://shalomapi-production.up.railway.app/api/v1/users/login", data)
-            .then(res => localStorage.setItem('token', res.data.accessToken))
+            .then(res => {
+                localStorage.setItem('token', res.data.accessToken); 
+                localStorage.setItem('userId', res.data.user.id);
+            })
             navigate('/')
         }
 

@@ -42,7 +42,7 @@ const Produts = () => {
         <ul className='categories-list'>
       <h2 className='categories-title'>Categorias</h2>
           {categories.map(category => (
-            <li key={category.id} onClick={() => filterProducts(category.id)} style={{ cursor: "pointer" }}>{category.category}</li>
+            <li key={category.id} onClick={() => filterProducts(category.id)} style={{ cursor: "pointer" }} className='category'>{category.category}</li>
           ))}
         <p className='show-all-products' onClick={() => showAll()} style={{ cursor: "pointer" }}>Ver todos los productos</p>
         </ul>
@@ -55,6 +55,7 @@ const Produts = () => {
                 description={product.description}
                 productImage={product.product_image}
                 stock={product.stock}
+                id={product.id}
                />
              ))}
       </div>

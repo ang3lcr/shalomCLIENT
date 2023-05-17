@@ -105,3 +105,14 @@ li{
     flex-direction: column;
   }
 }
+
+.see-products{
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Ajusta el ancho según tu diseño */
+    height: 200px; /* Ajusta la altura según tu diseño */
+    color: white;
+    font-size: 30px;
+}
